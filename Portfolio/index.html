@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_Website</title>
+    <!-------------------------------------------------------------------------CSS LINK---------------------------------------------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.icon" type="image/SMARANIKA.png">
+    <script src="https://kit.fontawesome.com/baa4d43a1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/SMARANIKA.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <br><span>Smaranika Manaswini</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Myself Smaranika Manaswini and I'm 20 years old.I am from Odisha,India.I have been practicing Web Development.I am greatly fascinated about Machine Learning.I would like to seek Masters and Ph.D in the field of Machine Learning in future.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating Dynamic Websites</li>
+                            <li><span>AI ML</span><br>Fascinating Studiez</li>
+                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April,2024-Current</span><br>Frontend Web Development Internship at InnovateEd Solutions</li>
+                            <li><span>March,2024-April,2024</span><br>Web Development Internship at Internpe</li>
+                            <li><span>September,2023-November,2023</span><br>Participation in Smart India Hackathon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>B.Tech In Computer Science at OUTR,Bhubaneswar</li>
+                            <li><span>2019-2021</span><br>Higher Secondary at Mother's Public School ,Bhubaneswar </li>
+                            <li><span>2007-2019</span><br>Primary and Secondary schooling at Venkateswar English Medium School,Bhubaneswar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Framework and CSS</h2>
+                    <p> While HTML takes care of the structure, CSS brings life to web pages by handling the visual presentation.ogether, HTML and CSS are crucial for creating a great user experience for websites and web apps.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Website Responsiveness</h2>
+                    <p>Responsive web design, or RWD, is a design approach that addresses the range of devices and device sizes, enabling automatic adaption to the screen, whether the content is viewed on a tablet, phone, television, or watch.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tape"></i>
+                    <h2>Backend Development</h2>
+                    <p>Back-end development is the creation of the server-side logic and systems that enable web applications to function. Back-end development determines how a website functions and handles data storage and retrieval.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calculator.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Calculator designed using HTML,CSS and Javascript performing all to types of calculations.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shop.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>A website for online exchange of goods and services.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.jpg" alt="">
+                    <div class="layer">
+                        <h3>To-do List</h3>
+                        <p>A list of tasks that need to be completed, typically organized in order of priority.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+
+
+    </div>
+    <!-----------------Contact---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>smaranikamanaswini@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>73856XXXXX</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Smaranika Manaswini</p>
+        </div>
+    </div>
+
+<!--------------------------------------------------------------JAVASCRIPT LINK------------------------------------------------------------------------------>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
